@@ -76,13 +76,6 @@
       "email": "",
       "events": "[{\"name\":\"Teems Meeting \",\"from\":\"09:00\",\"to\":\"14:00\",\"reccurence\":\"false\",\"day\":\"7/1/22\",\"id\":\"1653215394767\",\"description\":\"\"}]",
       "id": 7
-    },
-    {
-      "email": "bogdan_batrin@yahoo.com",
-      "events": "[{\"day\":\"2022-05-22\",\"description\":\"Alt description\",\"from\":\"22:00\",\"id\":1653215394767,\"name\":\"Teems Meeting Edit\",\"reccurence\":false,\"to\":\"20:00\"}]",
-      "id": "101",
-      "name": "Bogdan Batrin",
-      "password": "pass"
     }
   ]
 }
