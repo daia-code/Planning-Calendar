@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alexander Hanoi",
+      "email": "ht@gmail.com",
+      "events": [],
+      "password": "pass"
+    },
+    {
+      "name": "Hash",
+      "password": "12345",
+      "email": "",
+      "events": "[{\"name\":\"examen\",\"from\":\"1:00:01 PM\",\"to\":\"2:59:56 PM\",\"reccurence\":\"true\",\"day\":\"7/2/22\",\"id\":\"222\",\"description\":\"\"},{\"name\":\"1\",\"from\":\"5:27:27 PM\",\"to\":\"5:27:29 PM\",\"reccurence\":\"true\",\"day\":\"7/5/22\",\"id\":\"1\",\"description\":\"\"}]",
+      "id": 2
+    },
+    {
+      "name": "Andrei Grigor",
+      "email": "ag@gmail.com",
+      "password": "12345",
+      "events": [],
+      "id": 3
+    },
+    {
+      "name": "Mihai Posdarescu",
+      "email": "m@gmail.com",
+      "password": "12345",
+      "events": [
+        {
+          "name": "wtbwb",
+          "from": "09:00",
+          "to": "12:00",
+          "reccurence": true,
+          "day": "2022-05-23",
+          "id": 1653296849897,
+          "description": ""
+        },
+        {
+          "name": "Appointment 2",
+          "from": "09:00",
+          "to": "13:00",
+          "reccurence": false,
+          "day": "2022-05-01",
+          "id": 1653307369001,
+          "description": ""
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Doru Aleatoru",
+      "email": "do@gmail.com",
+      "password": "12345",
+      "events": [
+        {
+          "name": "Ceva",
+          "from": "11:00",
+          "to": "12:00",
+          "reccurence": true,
+          "id": 1652635305993,
+          "description": ""
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Test",
+      "email": "test@gmail.com",
+      "password": "12345",
+      "events": [],
+      "id": 6
+    },
+    {
+      "name": "Ion Ionul",
+      "password": "12345",
+      "email": "",
+      "events": "[{\"name\":\"Teems Meeting \",\"from\":\"09:00\",\"to\":\"14:00\",\"reccurence\":\"false\",\"day\":\"7/1/22\",\"id\":\"1653215394767\",\"description\":\"\"}]",
+      "id": 7
+    },
+    {
+      "email": "bogdan_batrin@yahoo.com",
+      "events": "[{\"day\":\"2022-05-22\",\"description\":\"Alt description\",\"from\":\"22:00\",\"id\":1653215394767,\"name\":\"Teems Meeting Edit\",\"reccurence\":false,\"to\":\"20:00\"}]",
+      "id": "101",
+      "name": "Bogdan Batrin",
+      "password": "pass"
+    }
+  ]
+}
