@@ -1,0 +1,173 @@
+
+.sapMPage>.sapMPageHeader + section, .sapMPage>.sapMPageSubHeader + section, .sapMPage>.sapMPageHeader + .sapUiHiddenPlaceholder + section {
+    
+    background: #7fc9f2 !important;
+}
+.sapMLabel2{
+	    padding: 3% 45% !important;
+    font-size: 1.7rem !important;
+    font-family: system-ui !important;
+    color: #42003b !important;
+}
+.imgStyle{
+	width:80% !important;
+	
+}
+.boxImg{
+	
+    width: 46% !important;
+	
+}
+.posLogin{
+	left: 65% !important;
+    padding-top: 6% !important;
+}
+.dataLog{
+	    width: 150% !important;
+	 
+}
+.sapMBtn {
+ 
+    margin: 3px !important;
+}
+.btnError{
+
+    left: 25% !important;
+
+}
+.btnError2{
+
+   left: 23% !important;
+
+}
+.sapMBtnBase {
+    position: relative;
+    padding: 0% 19% !important;
+}
+
+.styleBtn>.sapMBtnInner {
+	 	  --c: #2fc0f4 !important;
+    color: #5fb7ee !important;
+    font-size: 16px !important;
+    border: 0.3em solid var(--c) !important;
+    border-radius: 0.5em !important;
+    width: 100% !important;	
+    height: 3em !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    font-family: sans-serif !important;
+    letter-spacing: 0.1em !important;
+    text-align: center !important;
+    line-height: 3em !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
+    transition: 0.5s !important;
+    margin: 1em !important;
+    }
+.styleBtn2>.sapMBtnInner {
+	  --c: #2fc0f4 !important;
+    color: #5fb7ee !important;
+    font-size: 16px !important;
+    border: 0.3em solid var(--c) !important;
+    border-radius: 0.5em !important;
+    width: 229% !important;	
+    height: 3em !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    font-family: sans-serif !important;
+    letter-spacing: 0.1em !important;
+    text-align: center !important;
+    line-height: 3em !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
+    transition: 0.5s !important;
+    margin: 1em !important;
+   
+}
+.styleBtnCreate>.sapMBtnInner {
+
+	color: white !important;
+    background: #4C8FFB  !important;
+    border: 1px #3079ED solid  !important;
+    box-shadow: inset 0 1px 0 #80b0fb  !important;
+    left: 428% !important;
+    width: 600% !important;
+   
+}
+.sapMBtnInner {
+	   
+	    border-radius: 12px !important;
+}
+.styleBackground{
+  background: linear-gradient(#8fc6f3, #6acdf0) !important;
+}
+  
+.sapMTile2{
+	width: 11rem !important;
+    height: 11rem !important;
+}
+.elementC1{
+	padding-top: 5% !important;
+    width: 53% !important;
+    padding-left: 18% !important;
+    font-size: 17px !important;
+}
+.elementC2{
+       width: 44% !important;
+}
+
+.styleCalendar{
+	left: 3% !important;
+    top: 12% !important;
+}
+.moveBtn{
+	padding-left:85% !important;
+}
+.styleWelcome{
+	padding-left: 57px !important;
+	font-size: 20px !important;
+}
+.styleFont{
+	font-size: 19px !important;
+}
+.login-div{
+	margin: 104px auto !important;
+	background:white !important;
+}
+.timeForm{
+	
+    padding: 0% 5% !important;
+
+}
+.closeDialog{
+	    padding-left: 1% !important;
+}
+.sapUiCal {
+	    width: 400% !important;
+}
+.sapUiCalContent {
+	text-align: left !important;
+	padding-left: 110px !important;
+}
+.sapUiCalHead {
+    width: 25%!important;
+}
+.sapUiCalMonthView{
+    width: 80rem !important;
+}
+.sapUiUnifiedLegend{
+	font-size: 1.25rem !important;
+    padding: 1% 34% !important;
+}
+.btnDelete{
+	width: 119% !important;
+}
+.sapUiUnifiedLegend {
+    background-color: #7fc9f2 !important;
+    height: 17% !important;
+}
+.deleteEvent{
+	left: 19% !important;
+}
