@@ -2,10 +2,10 @@
 
 
 How to run the app
-In the project directory (the folder that contains json-server-calendar-api), you need first to install all dependencies by running:
+### In the project directory (the folder that contains json-server-calendar-api), you need first to install all dependencies by running:
 
 npm install
-$ You can run the app using the command:
+ You can run the app using the command:
 
 npm run-server
 Runs the app in the development mode.
