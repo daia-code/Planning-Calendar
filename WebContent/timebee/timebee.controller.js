@@ -102,11 +102,11 @@ loadingData:function(){
            					     
            					    
             					 oData2.events.push({ 
-            						 name: oData.users[i].events[j].name,
+            				         name: oData.users[i].events[j].name,
         			                 from:oData.users[i].events[j].from,
         			                 to: oData.users[i].events[j].to,
         			                 reccurence:oData.users[i].events[j].reccurence,
-        			                 day: oData.users[i].events[j].day,
+        			                 day: oData.users[i].events[j].day.split(".").reverse().join("/"),
         			                 id: oData.users[i].events[j].id,
         			                 description: oData.users[i].events[j].description
             				         });
@@ -114,7 +114,7 @@ loadingData:function(){
             				 }
             				 
         				 }
-        				  oModel2.setData(oData2);
+        				oModel2.setData(oData2);
            				oModel3.setData(oData3);
            				oModel2.refresh(true);
            				oModel3.refresh(true);
@@ -134,16 +134,17 @@ loadingData:function(){
 				title: "Warning",
 				state: sap.ui.core.ValueState.Warning,
 				content:[
-				         new sap.m.Label({ text: "Ruling the world is a time-consuming task. You don't have an account here" }),
+		 new sap.m.Label({ text: "Ruling the world is a time-consuming task. You don't have an account here" }),
                  new sap.m.Button({
-            type: sap.m.ButtonType.Emphasized,
+                        type: sap.m.ButtonType.Emphasized,
 			text: "OK",
-           	press: function () {
+           	        press: function () {
 		     dialog.close();}}).addStyleClass("btnError")]
         });
         	dialog.open();}
-        else   if(errorPass==1){
-        	var dialog = new sap.m.Dialog({
+        else  
+		if(errorPass==1){
+        	               var dialog = new sap.m.Dialog({
         		
 				title: "Error",
 				state: sap.ui.core.ValueState.Error,
@@ -152,11 +153,11 @@ loadingData:function(){
 					 text: "The only error you can make is to not fail your password." }),
 			
 				
-                 new sap.m.Button({
-                     type:sap.m.ButtonType.Emphasized,
-                     text: "OK",
-           	press: function () {
-		     dialog.close();}}).addStyleClass("btnError2")]
+                             new sap.m.Button({
+                                type:sap.m.ButtonType.Emphasized,
+                                text: "OK",
+           	                press: function () {
+		                dialog.close();}}).addStyleClass("btnError2")]
         });
         	dialog.open();}
         		
@@ -172,9 +173,9 @@ loadingData:function(){
     	 var oModel2 =sap.ui.getCore().getModel("model2");
   		var oData2= oModel2.getData();
   		console.log(oData2);
-    	var oModel3 =sap.ui.getCore().getModel("date");
+    	 var oModel3 =sap.ui.getCore().getModel("date");
  		var oData3= oModel3.getData();
-    	var oCalendar = sap.ui.getCore().byId("calendar");
+        	var oCalendar = sap.ui.getCore().byId("calendar");
 		for(var i=0;i<oData2.events['length'];i++){
 			
 				 var oSpecialDate=	new sap.ui.unified.DateTypeRange({
