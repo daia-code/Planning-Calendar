@@ -69,7 +69,7 @@ sap.ui.controller("timebee.calendar", {
 
 
 		dialog.open();
-
+       
 		 
 	},
 	saveChangeEvt:function(oEvt){
@@ -89,7 +89,7 @@ sap.ui.controller("timebee.calendar", {
 	    var v6= sap.ui.getCore().byId("newIdSet").getValue();
 	    var v7= sap.ui.getCore().byId("newDescriptionSet").getValue();
 	
-		
+	    v2 = v2.split(".").reverse().join("/");
 		 var oInput1 = sap.ui.getCore().byId("idName").getValue();
 		 var oInput2 = sap.ui.getCore().byId("idPass").getValue();
 		 var oInput3 = sap.ui.getCore().byId("idEmail").getValue();
@@ -100,6 +100,7 @@ sap.ui.controller("timebee.calendar", {
 		
 			var oCalendar = sap.ui.getCore().byId("calendar");
 			console.log(sInputPass);
+			dialog.close();
 			for(var i=0;i<oData3.users['length'];i++){
 				if(oData3.users[i].name==sInputPass){
 					var sId = oData3.users[i].id;}};
@@ -123,12 +124,15 @@ sap.ui.controller("timebee.calendar", {
 	    		     model2.setData(oDataE);
 				     
 				 oData4.push(oDataE.events[i].day);
-//				 this.calendarDate();
+
 				model2.refresh(true);
 				oModel3.refresh(true);
+				this.calendarDate();
+			
 		     
 			}
-		}
+		};
+	
 		
 		var oDataToUpdate ={
 				 name:oInput1,
@@ -148,7 +152,7 @@ sap.ui.controller("timebee.calendar", {
   			contentType: 'application/x-www-form-urlencoded',
   			success: function() {
 				console.log("POST SUCCESS");
-				
+			
 	   	      		dialog.close();
 	   	      		this.calendarDate();
 				//read inca o data cu userul
@@ -171,7 +175,7 @@ sap.ui.controller("timebee.calendar", {
       	var oCalendar = sap.ui.getCore().byId("calendar");
       	oModel3.refresh(true);
    		for(var i=0;i<oData2.events['length'];i++){
-   			
+   			console.log(oData3[i]);
    				 var oSpecialDate=	new sap.ui.unified.DateTypeRange({
    			  			
    						startDate:new Date(oData3[i]),
@@ -194,6 +198,7 @@ sap.ui.controller("timebee.calendar", {
 	logout:function(){
 		var oModel =sap.ui.getCore().getModel("model2");
 		var oModel2 =sap.ui.getCore().getModel("table");
+		var oCalendar = sap.ui.getCore().byId("calendar");
 		oModel.setData("");
 		oModel2.setData("");
 		
@@ -210,7 +215,7 @@ sap.ui.controller("timebee.calendar", {
 			 oInput4.setValue("");
 			 oInput5.setValue("");
 			 oInput6.setValue("");
-		    
+			 oCalendar.removeAllSpecialDates();   
 		    
 		app.to("idtimebee1");
 	},
@@ -338,7 +343,7 @@ sap.ui.controller("timebee.calendar", {
 		 var oModel4 =sap.ui.getCore().getModel("date");
 		 var oData4= oModel4.getData();
 		
-			var oCalendar = sap.ui.getCore().byId("calendar");
+		
 			console.log(sInputPass);
             var oCal1 = this.byId("calendar");
 			for(var i=0;i<oData3.users['length'];i++){
@@ -346,6 +351,7 @@ sap.ui.controller("timebee.calendar", {
 					var sId = oData3.users[i].id;}};
 		for(var i=0;i<oDataE.events['length'];i++){
 			if(oDataE.events[i].name==oData[0].name && oDataE.events[i].day==oData[0].day && oDataE.events[i].from==oData[0].from && oDataE.events[i].to==oData[0].to ){
+			
 				oDataE.events.pop(oDataE.events[i]);
 				oData4.pop(i);
 			    oData.pop(0);
@@ -356,8 +362,8 @@ sap.ui.controller("timebee.calendar", {
 				 
 	    	       
 	    		     model2.setData(oDataE);
-			
-        		 this.calendarDate();
+	    		     
+        	
 				model2.refresh(true);
 				oModel3.refresh(true);
 		     
@@ -382,9 +388,10 @@ sap.ui.controller("timebee.calendar", {
   			contentType: 'application/x-www-form-urlencoded',
   			success: function() {
 				console.log("DELETE SUCCESS");
-				
+				this.calendarDate();
+			
 	   	      		dialog.close();
-	   	      		this.calendarDate();
+	   	      		
 	   	      	
 				//read inca o data cu userul
 			}.bind(this),
@@ -406,7 +413,7 @@ sap.ui.controller("timebee.calendar", {
 		var e= sap.ui.getCore().byId("dayFormEvt").getValue();
 		var f=sap.ui.getCore().byId("idFormEvt").getValue();
 		var g=sap.ui.getCore().byId("descriptFormEvt").getValue();
-	
+		 e = e.split(".").reverse().join("/");
 		 var oCalendar = sap.ui.getCore().byId("calendar");
 		 
 		if(a!='' && b!='' && e!=''){
@@ -451,6 +458,7 @@ sap.ui.controller("timebee.calendar", {
    	var oModel3 =sap.ui.getCore().getModel("date");
 		var oData3= oModel3.getData();
    	var oCalendar = sap.ui.getCore().byId("calendar");
+   	    
 		for(var i=0;i<oData2.events['length'];i++){
 			
 				 var oSpecialDate=	new sap.ui.unified.DateTypeRange({
