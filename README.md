@@ -8,7 +8,7 @@ npm install
 ### You can run the app using the command:
 
 npm run-server
-     or
+     //
 json-server --watch db.json --port 5000
 
 ### Runs the app in the development mode.
