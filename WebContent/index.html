@@ -1,33 +1,48 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
-        <link rel="stylesheet" href="style.css">
-		<script src="resources/sap-ui-core.js"
-				id="sap-ui-bootstrap"
-				data-sap-ui-libs="sap.m,sap.ui.layout,sap.ui.commons,sap.ui.unified"
-				data-sap-ui-theme="sap_bluecrystal">
-		
-		</script>
-		
-  <script >"https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"</script>
-		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+<link rel="stylesheet" href="style.css">
+<script src="resources/sap-ui-core.js" id="sap-ui-bootstrap"
+	data-sap-ui-libs="sap.m,sap.ui.layout,sap.ui.commons,sap.ui.unified"
+	data-sap-ui-theme="sap_bluecrystal">
+	
+</script>
 
-		<script>
-				sap.ui.localResources("timebee");
-				var app = new sap.m.App({initialPage:"idtimebee1"});
-				var page1 = sap.ui.view({id:"idtimebee1", viewName:"timebee.timebee", type:sap.ui.core.mvc.ViewType.JS});
-				var page2 = sap.ui.view({id:"idtimebee2", viewName:"timebee.accountcreate", type:sap.ui.core.mvc.ViewType.JS});
-				var page3 = sap.ui.view({id:"idtimebee3", viewName:"timebee.calendar", type:sap.ui.core.mvc.ViewType.JS});
-				app.addPage(page1);
-				app.addPage(page2);
-				app.addPage(page3);
-				app.placeAt("content");
-		</script>
+<script>
+	"https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+</script>
+<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
 
-	</head>
-	<body class="sapUiBody" role="application">
-		<div id="content"></div>
-	</body>
+<script>
+	sap.ui.localResources("timebee");
+	var app = new sap.m.App({
+		initialPage : "idtimebee1"
+	});
+	var page1 = sap.ui.view({
+		id : "idtimebee1",
+		viewName : "timebee.timebee",
+		type : sap.ui.core.mvc.ViewType.JS
+	});
+	var page2 = sap.ui.view({
+		id : "idtimebee2",
+		viewName : "timebee.accountcreate",
+		type : sap.ui.core.mvc.ViewType.JS
+	});
+	var page3 = sap.ui.view({
+		id : "idtimebee3",
+		viewName : "timebee.calendar",
+		type : sap.ui.core.mvc.ViewType.JS
+	});
+	app.addPage(page1);
+	app.addPage(page2);
+	app.addPage(page3);
+	app.placeAt("content");
+</script>
+
+</head>
+<body class="sapUiBody" role="application">
+	<div id="content"></div>
+</body>
 </html>
