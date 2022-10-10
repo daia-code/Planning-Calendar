@@ -1,6 +1,6 @@
-# Planning-Calendar
-
-
+# Planning-Calendar 
+Berg Software SAP UI5 Internship 
+### Mai - Iunie 2022
 How to run the app
 ### In the project directory (the folder that contains json-server-calendar-api), you need first to install all dependencies by running:
 
